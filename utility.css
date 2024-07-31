@@ -1,0 +1,85 @@
+.border
+{
+    border: 2px solid black;
+    margin: 3px;
+}
+.flex
+{
+    display: flex;
+    
+}
+.bg-black
+{
+   background-color: black;
+   color: white;
+}
+.invert
+{
+  /* to change the color of the image from black to white or from white to black */
+   filter: invert(1);  
+}
+.bg-grey
+{
+   background-color: rgb(25, 23, 23);
+}
+.radius
+{
+ border-radius: 5px;
+}
+.m-1
+{
+    margin: 5px;
+}
+.p-1
+{
+    padding: 5px;
+}
+
+/* Width of the entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #070606; 
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.size
+{
+    height: 20px;
+}
+.playBtn
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgb(252, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playitems img
+{
+    cursor: pointer;
+
+}
+.nav-button {
+    cursor: pointer;
+    font-size: 2rem;
+    user-select: none;
+    padding: 0 10px;
+    position: absolute;
+    top: 10%;
+}
