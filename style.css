@@ -1,0 +1,488 @@
+body{
+    background-color: black;
+    color: white;
+}
+ *
+ {
+    margin: 0;
+    padding: 0;
+ }
+.left
+{
+     width: 20vw;
+     padding: 5px;
+}
+.right
+{
+  width:80vw;
+  height: 100vh;
+  /* border: 2px solid white; */
+  display: flex;
+  
+  /* position: relative; */
+  /* margin: 5px; */
+  /* overflow-y: scroll; */
+  
+}
+
+.home{
+  min-height: 20vh;
+}
+.home ul li{
+    width: 15px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    /* gap is used to maintain a gap between list items */
+    margin: 5px;
+    height: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.heading
+{
+  
+  width: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+    /* gap is used to maintain a gap between list items */
+    margin: 5px;
+    font-size:x-small
+  
+  
+}
+.add
+{
+  margin: 0 5px;
+  cursor: pointer;
+}
+.newDiv{
+  position: relative;
+  height: 60px;
+  border: 1px solid white;
+  margin: 8px 2px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.newDiv:hover{
+  background-color: #272525;
+}
+.likedsongs{
+  position: relative;
+  height: 60px;
+  border: 1px solid white;
+  margin: 17px 2px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+.likedsongs:hover{
+  background-color: rgb(39, 35, 35);
+}
+.likedimage
+{
+  width: 5%;
+
+}
+.likedimage img{
+  width: 100%;
+  object-fit: contain;
+}
+.likebox{
+  position: absolute;
+  box-sizing: border-box;
+  height:55px;
+  width: 50px;
+  margin: 3px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0px;
+}
+.library
+{
+  min-height: 75vh;
+  /* height: 72vh; */
+  position: relative;
+}
+
+.heading img{
+  width: 25px;
+}
+/* .librarySongs{
+   height: 75vh;
+   background-color:red ;
+   display: none;
+    width: 75vw;
+ } */ 
+.librarySongs
+{
+    /* margin-right: 5px; */
+    /* height: 83%;
+    width: 67%; */
+    position: absolute;
+    /*to achieve the variable ccolor effect*/
+    background: linear-gradient(to bottom, #123627, #040303);
+    width: 73vw;
+    height: 80%;
+    top: 13%; /*Adjust the top and left values to position the overlay box */
+      left: 22%;
+      z-index: 0.5; /* Make sure this has a higher z-index than the background box */
+      padding: 10px;
+      color: white;
+      display: none; 
+      overflow-y:scroll;
+      /* transition: all 0.3s; */
+      /* transform: scale(1); */
+      /* transition: opacity 0.5s ease, transform 0.5s ease; */
+  
+    }
+    #img-sec
+    {
+        height: 50%;
+        width: 100%;
+    
+        /* background: linear-gradient(to bottom, #3e347e, #2f3639); */
+    
+    }
+/* .librarySongs{
+  height: 70%;
+ overflow: auto;
+} */
+ .librarySongs ul{
+  padding: 0  12px;
+  /* font-size: 16px; */
+ } 
+.librarySongs ul li{
+ list-style-type:decimal;
+ display: flex;
+ justify-content: space-between;
+ gap: 12px;
+ padding: 13px;
+ border: 1px solid white;
+ margin: 12px 0;
+} 
+.librarySongs ul li:hover{
+  background-color: rgb(31, 29, 29);
+}
+.info
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.playnow
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.footer
+{
+  display: flex;
+  font-size: 10px;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+
+}
+.footer a{
+  color: grey;
+}
+
+.header
+{
+  display: flex;
+  /* height: 75px; */
+  height: 10vh;
+  /* border: 2px solid maroon; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-top: 5px;
+  position: fixed;
+  /* top: 0px; */
+  z-index: 1;
+  width:74vw;
+  margin: 5px;
+}
+#hamburger,#close
+{
+ display: none;
+ cursor: pointer;
+}
+#close:hover{
+  background-color: rgb(64, 62, 62);
+  font-size: xx-large;
+}
+#hamburger:hover{
+    font-size: xx-large;
+}
+.Playlist{
+  position: absolute;
+  top: 13%;
+  /* right: 3.5%; */
+  height: 75vh;
+  background: linear-gradient(to bottom,rgb(22, 27, 23) ,black);
+  /* overflow-y: scroll; */
+  width: 74.8vw;
+  /* border: 2px solid white; */
+
+}
+.header > *
+{
+   margin: 15px;
+}
+.spotifyPlaylist
+{
+  position: absolute;
+  left: 1%;
+  margin: 5px;
+  background-color: rgb(25, 24, 24);
+  /* border: 2px solid brown; */
+  width: 96%;
+  overflow-x:hidden;
+  /* max-height: 50vh;
+  position: relative; */
+
+}
+.cardContainer
+{
+  background-color: rgb(25, 24, 24);
+  display: flex;
+  /* border: 2px solid pink; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+}
+.card
+{
+  width: 250px;
+  padding: 10px;
+  background-color: rgb(25, 24, 24);
+  position: relative;
+  flex-shrink: 0;
+  min-width:25%;
+ 
+}
+.card:hover{
+  background-color: rgb(36, 35, 35);
+
+}
+.card img{
+  width: 100%;
+  object-fit: contain;
+}
+.card > *
+{
+  padding-top: 10px;
+}
+.play{
+  width: 50px;       /* Set the width */
+  height: 40px;      /* Set the height equal to the width */
+  background-color: rgb(0, 165, 25);  /* Optional: Set a background color */
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 90px;
+  right:20px;
+
+}
+.button
+{
+  display: flex;
+}
+.signBtn
+{
+
+  color: rgb(137, 139, 139);
+  font-size: larger;
+  margin: 10px;
+  border: none;
+  width: 66px;
+}
+.signBtn:hover{
+  color: rgb(240, 255, 255);
+}
+.loginBtn
+{
+  font-size: large;
+
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  padding-left: 25px;
+  margin: 10px;
+ padding-right: 25px;
+ height: 50px;
+ width: 102px;
+}
+.loginBtn:hover{
+  height: 55px;
+ width: 125px;
+  font-weight: bold;
+}
+.playSection
+{
+  width: 75%;
+  height: 10vh;
+  position: fixed;
+  bottom: 8px;
+  right: 3%;
+  border-radius: 42px;
+  /* border: 2px solid red; */
+  background-color: rgb(35, 31, 31);
+}
+.playitems
+{
+  margin: 4px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.seekbar
+{
+  position: relative;
+  height: 6px;
+  width: 60%;
+  background-color: rgb(193, 210, 236);
+  /* left: 16%; */
+  /* bottom: 3px; */
+  margin:5px ;
+  cursor: pointer;
+}
+.circle
+{
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -2px;
+  background-color: aliceblue;
+  left:0%;
+}
+.allitems
+{
+  display: flex;
+  justify-content: space-between;
+}
+.songinfo
+{
+  font-size: larger;
+  margin: 10px;
+}
+
+/* .songtime{
+   position: absolute; 
+   bottom:2%;
+}  */
+.volume
+{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px;
+}
+.range
+{
+  margin: 5px;
+}
+#volseek{
+  height: 3px;
+}
+
+.playsection{
+  position: relative;
+    /* background: red; */
+    /* border: 2px solid green; */
+    height: 22px;
+  display: flex;
+  /* flex-direction: row-reverse; */ 
+  justify-content:center ;
+  gap: 10px;
+}
+@media (max-width: 1300px) {
+  .left {
+     position: fixed;
+     left: -100%;
+     background-color: red;
+     transition: all .3s;
+     z-index: 3;
+     width: 233px;
+  }
+  .right{
+    width: 100vw;
+    height: 100vh;
+  }
+  .header{
+    width: 95vw;
+    position: absolute;
+    left: 2%;
+  }
+  #hamburger ,#close
+  {
+    display:  block;
+  }
+  .nav 
+  {
+    display: flex;
+  }
+  .logo{
+    display: flex;
+    justify-content: space-between;
+  }
+  .playSection{
+    width: 90%;
+  }
+  .Playlist{
+        width: 85vw;
+        right: 7.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
+  .librarySongs{
+    width: 94vw;
+    left: 1.5%;
+    /* right: 7.5%; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+  }
+  
+  
+ 
+}
+
+/* @media only screen and (max-width: 900px) {
+  .card {
+    width: 50%;
+    margin: 6px 0;
+  }
+} */
+
+ @media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  } 
+}
+/* @media only screen and (max-width: 1200px) {
+  .card {
+    width: 48%;
+  }
+}  */
